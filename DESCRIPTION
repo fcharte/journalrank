@@ -1,12 +1,12 @@
 Package: journalrank
-Title: What the Package Does (One Line, Title Case)
+Title: Produces Reports with Scientific Journals' Ranks
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Francisco",
+           family = "Charte",
            role = c("aut", "cre"),
-           email = "first.last@example.com")
-Description: What the package does (one paragraph).
+           email = "francisco@fcharte.com")
+Description: Gathers data related to scientific journals rankings and generates reports with them.
 License: What license it uses
 Encoding: UTF-8
 LazyData: true
