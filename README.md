@@ -3,9 +3,7 @@
 journalrank
 ===========
 
-[![Travis build status](https://travis-ci.org/fcharte/journalrank.svg?branch=master)](https://travis-ci.org/fcharte/journalrank)
-
-[![Coverage status](https://codecov.io/gh/fcharte/journalrank/branch/master/graph/badge.svg)](https://codecov.io/github/fcharte/journalrank?branch=master)
+[![Travis build status](https://travis-ci.org/fcharte/journalrank.svg?branch=master)](https://travis-ci.org/fcharte/journalrank) [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/fcharte/journalrank?branch=master&svg=true)](https://ci.appveyor.com/project/fcharte/journalrank) [![Coverage status](https://codecov.io/gh/fcharte/journalrank/branch/master/graph/badge.svg)](https://codecov.io/github/fcharte/journalrank?branch=master)
 
 The goal of journalrank is to ...
 
