@@ -7,8 +7,14 @@ Authors@R:
            role = c("aut", "cre"),
            email = "francisco@fcharte.com")
 Description: Gathers data related to scientific journals rankings and generates reports with them.
-License: What license it uses
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/fcharte/journalrank
 BugReports: https://github.com/fcharte/journalrank/issues
+Suggests: 
+    covr,
+    testthat,
+    spelling
+Language: en-US
+RoxygenNote: 6.1.1
