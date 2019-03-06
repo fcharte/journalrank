@@ -1,5 +1,5 @@
 context("test-test_function")
 
-test_that("multiplication works", {
-  expect_equal(2 * 2, 4)
+test_that("test function works", {
+  expect_equal(test_function(), "do nothing")
 })
