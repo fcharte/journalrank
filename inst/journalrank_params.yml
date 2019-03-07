@@ -1,0 +1,27 @@
+  # Set config parameters: these parameters should be updated by the user if the search and/or query procedures change in the future, while the package is updated
+
+  # SJR web site parameters
+SJR:
+    URLs:
+      journalbase          : https://www.scimagojr.com/                                           # Base URL
+      journalsearch        : https://www.scimagojr.com/journalsearch.php?q=                       # Search URL
+      journaldetails       : https://www.scimagojr.com/journalsearch.php?q=%s&tip=sid&clean=0     # Journal details URL
+
+    parse:
+      searchnodes        : .search_results a          # Obtain the nodes with search results
+      extractID          : .*q=([0-9]+).*             # Expression to extract the journal IDs
+      journalnamenodes   : .jrnlname                  # Obtain the node containing the journal name
+
+SCOPUS:
+    URLs:
+      journalbase          : https://www.scopus.com/sources/                                           # Base URL
+
+    parse:
+      searchnodes        : undefined
+
+INCITE:
+    URLs:
+      journalbase          : https://jcr.incites.thomsonreuters.com/                                   # Base URL
+
+    parse:
+      searchnodes        : undefined
