@@ -2,10 +2,16 @@
 % Please edit documentation in R/params.R
 \name{journalrank_params_getpath}
 \alias{journalrank_params_getpath}
-\title{Get and check the path for the YAML params file}
+\title{Gets and checks the path for the default YAML params file}
 \usage{
-journalrank_params_getpath()
+journalrank_params_getpath(file = NULL)
+}
+\arguments{
+\item{file}{Path and name of the file to be checked}
+}
+\value{
+The full path of the configuration file
 }
 \description{
-Get and check the path for the YAML params file
+Gets and checks the path for the default YAML params file
 }

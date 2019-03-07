@@ -1,9 +1,17 @@
-#' Get and check the path for the YAML params file
-journalrank_params_getpath <- function() {
-  path <- system.file("journalrank_params.yml", package = "journalrank")
+#' Gets and checks the path for the default YAML params file
+#'
+#' @param file Path and name of the file to be checked
+#' @return The full path of the configuration file
+#'
+journalrank_params_getpath <- function(file = NULL) {
+  if (is.null(file)) {
+    path <- system.file("journalrank_params.yml", package = "journalrank")
+  } else {
+    path <- system.file(file)
+  }
 
   if (identical(path, "")) {
-    stop("Configuration parameters can't be loaded", call. = FALSE)
+    stop(ERR_configloading, call. = FALSE)
   }
 
   path
@@ -11,7 +19,7 @@ journalrank_params_getpath <- function() {
 
 #' Reads the configuration file and returns a `journalrank_params` object
 #'
-#' @param path Path and name of the file containing the configuration parameters. By default reads the configuration file included with the package
+#' @param file Path and name of the file containing the configuration parameters. By default reads the configuration file included with the package
 #' @return A `journalrank_params` object
 #' @seealso \code{\link{journalrank_params_open}}
 #' @examples
@@ -24,7 +32,8 @@ journalrank_params_getpath <- function() {
 #' }
 #' @export
 #'
-journalrank_params_get <- function(path = journalrank_params_getpath()) {
+journalrank_params_get <- function(file = NULL) {
+  path = journalrank_params_getpath(file)
   params <- yaml::read_yaml(path)
   class(params) <- "journalrank_params"
 

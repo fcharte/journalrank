@@ -1,6 +1,8 @@
 context("test-journalrank_params_get")
 
 test_that("journalrank_params_get returns correct data", {
+  expect_error(journalrank_params_get("inexistentfile"), ERR_configloading)
+
   params <- journalrank_params_get()
 
   expect_s3_class(params, journalrank_params)

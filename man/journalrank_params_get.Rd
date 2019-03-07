@@ -4,10 +4,10 @@
 \alias{journalrank_params_get}
 \title{Reads the configuration file and returns a \code{journalrank_params} object}
 \usage{
-journalrank_params_get(path = journalrank_params_getpath())
+journalrank_params_get(file = NULL)
 }
 \arguments{
-\item{path}{Path and name of the file containing the configuration parameters. By default reads the configuration file included with the package}
+\item{file}{Path and name of the file containing the configuration parameters. By default reads the configuration file included with the package}
 }
 \value{
 A \code{journalrank_params} object
