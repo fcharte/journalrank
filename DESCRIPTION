@@ -22,4 +22,5 @@ RoxygenNote: 6.1.1
 Imports: 
     rvest,
     xml2,
-    yaml
+    yaml,
+    httr
